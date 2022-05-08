@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.itp.walletguard.view.ui.fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tran_list"
+        android:name="com.itp.walletguard.view.ui.fragment.TransactionLstFragment"
+        android:label="@string/menu_tran_lst"
+        tools:layout="@layout/transaction_lst_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bnk"
+        android:name="com.itp.walletguard.view.ui.fragment.CreateBankFragment"
+        android:label="@string/menu_cre_bnk"
+        tools:layout="@layout/create_bank_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bnk_tran_lst"
+        android:name="com.itp.walletguard.view.ui.fragment.BnkTransLstFragment"
+        android:label="@string/menu_bnk_trans_lst"
+        tools:layout="@layout/create_bank_fragment" />
+</navigation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itp.walletguard">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".util.WalletGuardApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/wg_app_launch"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/wg_app_launch"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WalletGuard">
+        <activity
+            android:name=".view.BnkTransActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.ReportActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.TransactionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.CalculatorActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.CategoryListActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.CategoryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.SignUpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WalletGuard.Two" />
+        <activity
+            android:name=".view.Home"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.WalletGuard.NoActionBar" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
